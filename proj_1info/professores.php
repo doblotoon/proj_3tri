@@ -20,7 +20,7 @@
 
 
   function listaProfessores(){
-  	$professores = array();
+  $professores = array();
 
   	$dados = file('dados/professores.csv');
 
@@ -39,10 +39,6 @@
 
   	return $professores;
   }
-
-
-  $lista = listaProfessores();
-  print_r($lista);
 
 
 ?>
