@@ -1,0 +1,12 @@
+.foto{
+	width: 25%;
+	float: left;
+	border: outset;
+}
+
+.dados{
+	float: left;
+	margin-left: 5%;
+	width: 70%;
+	font-size: 150%;
+}
