@@ -12,15 +12,46 @@ include 'alunos.php';
 	<!-- conteudo principal -->
 	<article class="coluna80">
 	<section class="lista">
+	<H2>1INFO1</H2>
 			<ul>
 <?php
 	
+	$lista = listaAlunosTurma('1info1');
+
 	foreach ($lista as $aluno) {
-		echo ("<div class='aluno'>");
-		echo ("<img scr='".$aluno['foto']."'>");
+	
+	
 		echo ("<li><a href='detalha_aluno.php?cod=".$aluno['matricula']."'>".$aluno['nome']."</a></li>");
-		echo ("</div>");	
+		
 	}
+?>
+	</section>
+	<section class="lista">
+	<H2>1INFO2</H2>
+
+<?php
+	$lista = listaAlunosTurma('1info2');
+
+	foreach ($lista as $aluno) {
+	
+		
+		echo ("<li><a href='detalha_aluno.php?cod=".$aluno['matricula']."'>".$aluno['nome']."</a></li>");
+		
+	}
+?>
+	</section>
+	<section class="lista">
+	<H2>1INFO3</H2>
+
+<?php
+
+	$lista = listaAlunosTurma('1info3');
+
+	foreach ($lista as $aluno) {
+		echo ("<li><a href='detalha_aluno.php?cod=".$aluno['matricula']."'>".$aluno['nome']."</a></li>");
+		
+	}
+
 ?>
 
 			</ul>

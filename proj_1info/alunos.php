@@ -46,7 +46,7 @@
 
 	foreach ($dados as $posicao => $linha) {
 	  if ($posicao != 0) {
-		$colunas = explode(",", $linha){
+		$colunas = explode(",", $linha);
 		$aluno = array();
 		if ($colunas[2] == $turma) {
 			$aluno['matricula'] = $colunas[0];
