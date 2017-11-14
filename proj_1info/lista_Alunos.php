@@ -11,9 +11,11 @@ include 'alunos.php';
 
 	<!-- conteudo principal -->
 	<article class="coluna80">
+	<a href="cadastroAlunos.php"><h4>Cadastrar aluno</h4></a>
 	<section class="lista">
 	<H2>1INFO1</H2>
 			<ul>
+			
 <?php
 	
 	$lista = listaAlunosTurma('1info1');
