@@ -4,6 +4,8 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript" src="js/jquerry.js" ></script>
+	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/completo.css">
 	<link rel="stylesheet" type="text/css" href="css/geral.css">
 	<link rel="stylesheet" type="text/css" href="css/profs.css">
@@ -18,7 +20,7 @@ session_start();
 <?php
 	if (!isset($_SESSION['login'])) {
 ?>
-		<form class="porcento" method="post" action="login.php">
+		<form class="porcento" method="post" action="carregando.php">
 			<label for="login">login</label>
 			<input type="text" name="login">
 

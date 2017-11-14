@@ -11,7 +11,17 @@ include 'professores.php';
 	<article class="coluna80">
 	<section class="lista">
 			<ul>';
+
+
+ if (isset($_SESSION['login'])) {
+
+?>
 	
+	<a href="insereProfessor.php"><h4>Cadastrar Professor</h4></a>
+	
+<?php
+}else{
+}
 	foreach ($lista as $professor) {
 		echo "<div class='professor'>";
 		echo "<img scr='".$professor['foto']."'>";
@@ -20,6 +30,7 @@ include 'professores.php';
 	}
 
 ?>
+
 			</ul>
 		</section>
 	</article>
