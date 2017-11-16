@@ -6,8 +6,6 @@ $(document).ready(function(){
 
 	})
 	$('.fechar').click(function(){
-		var di;
-		di = $(this).attr('di');
-		$('.'+di).removeClass('escondido');
+		$('.modal').addClass('escondido');
 	})
 })

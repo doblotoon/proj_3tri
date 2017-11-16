@@ -9,7 +9,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="css/completo.css">
 	<link rel="stylesheet" type="text/css" href="css/geral.css">
 	<link rel="stylesheet" type="text/css" href="css/profs.css">
-	<title>Todos professores</title>
+	<title>acessor eletrônico</title>
 	<meta charset="utf-8">
 </head>
 <body>
@@ -20,7 +20,7 @@ session_start();
 <?php
 	if (!isset($_SESSION['login'])) {
 ?>
-		<form class="porcento" method="post" action="carregando.php">
+		<form class="login" method="post" action="carregando.php">
 			<label for="login">login</label>
 			<input type="text" name="login">
 
@@ -32,7 +32,7 @@ session_start();
 <?php
 	}else{
 ?>
-	<div class="porcento">
+	<div class="login">
 	<p>Olá, <?=$_SESSION['login']?></p>
 	<a href="logout.php">Sair</a>
 	</div>

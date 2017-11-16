@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+
 include 'cabecalho.php';
 
 if (isset($_SESSION['login'])) {

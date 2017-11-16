@@ -17,8 +17,12 @@ img{
 
 #nome_site{
 	margin-top: 2%;	
-	width: 85%;
+	width: 50%;
 	float: left;
+}
+.login{
+	width: 40%;
+	float: right;
 }
 
 .divider{
@@ -28,7 +32,7 @@ img{
 
 /*menu*/
 .menu{
-	width: 100%;
+	width: 95%;
 	margin-bottom: 30px;	
 }
 
@@ -66,10 +70,6 @@ a{
 	border: 1px solid #aaa;
 	padding: 2%;
 }
-.porcento{
-	width: 30%;
-	float: right;
-}
 
 
 .escondido{
@@ -77,8 +77,8 @@ a{
 }
 
 .modal {
-	background: #FFF;
-	opacity: 0.80;
+	background: #000;
+	opacity: 0.99;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -88,12 +88,18 @@ a{
 }
 
 .modal img{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 40%;
+	width: 30%;
+	height: 60%;
     margin-left:30%;
     margin-top: 6%;
+}
+
+.modal .fechar{
+	color: #ddd;
+	position: fixed;
+	top: 0;
+	right: 0;
+	cursor: pointer;
 }
 
 .espaco{
