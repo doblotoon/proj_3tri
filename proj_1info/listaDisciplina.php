@@ -3,6 +3,7 @@
 	include 'disciplinas.php';
 
 $cont = 1;
+$disciplinas = file('disciplinas.csv');
 
 
 	for ($i=1; $i < 4 ; $i++) {
@@ -13,9 +14,9 @@ $cont = 1;
 
 		foreach ($funcao as $oferta) {
 			if ($oferta['turma'] == '1info1') {
-			 		echo "<li>
-			 				<a href='detalha_professor.php?cod=".$oferta['cod_disciplina']."'>".$oferta['nome']."</a>
-			 			</li>";
+			 		echo "<li>"
+						.$oferta['cod_disciplina']."-".$oferta['nome'].
+					 "</li>";
 			}
 			if ($oferta['turma'] == '1info2') {
 				echo "<li>"
@@ -26,7 +27,7 @@ $cont = 1;
 				echo "<li>"
 						.$oferta['cod_disciplina']."-".$oferta['cod_professor'].
 					 "</li>";
-			}	
+			}
 		}
 		echo "</ul>
 			 </section>";

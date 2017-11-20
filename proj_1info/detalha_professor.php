@@ -20,7 +20,7 @@
 			</section>
 
 			<div class="modal img escondido">
-				<div class="fechar "><img src="imagens/x.png"></div>
+				<div class="fechar "><img id="diminuir" src="imagens/x.png"></div>
 				<img src="<?=$professor['foto']?>">
 			</div>
 		</section>

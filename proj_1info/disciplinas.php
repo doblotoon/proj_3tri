@@ -25,8 +25,8 @@
 
 			if ($colunas[0] == $codigo) {
 		    	$disciplina['codigo'] = $colunas[0];
-		    	$disciplina['disciplina'] = $colunas[1];	
-			}	
+		    	$disciplina['disciplina'] = $colunas[1];
+			}
 		}
 		return $disciplina;
 	}
@@ -39,14 +39,27 @@
 		foreach ($dados as $linhas) {
 			if ($linhas != 0 ) {
 				$colunas = explode(',', $linhas);
-				$oferta['ano'] = $colunas[0];
-				$oferta['turma'] = $colunas[1];
-				$oferta['cod_disciplina'] = $colunas[2];
-				$oferta['cod_professor'] = $colunas[3];
-				$ofertas[] = $oferta;
+				if ($colunas[0] == $ano and $colunas[1] == $turma) {
+					$oferta['ano'] = $colunas[0];
+					$oferta['turma'] = $colunas[1];
+					$oferta['cod_disciplina'] = $colunas[2];
+					$oferta['cod_professor'] = $colunas[3];
+					$ofertas[] = $oferta;
+				}
 			}
 		}
 		return $ofertas;
 	}
 
-?>			
+	function troca($codigo){
+		//ele precia trocar o numero da materia pelo nome da mesma
+		$disciplinas = file('disciplinas.csv');
+		$ofertas =  file('ofertas.csv');
+
+			if ($codigo == $ofertas['cod_disciplinas']) {
+					$codigo =$disciplinas['nome'];
+
+			}
+		}
+
+?>
