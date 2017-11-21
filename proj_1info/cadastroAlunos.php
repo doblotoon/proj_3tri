@@ -8,10 +8,10 @@ if (isset($_SESSION['login'])) {
  ?>
 
  <div class="tamanho"></div>
- <form class="cadastro" method="post" action="insereAluno.php" enctype="multipart/form-data">
+ <form class="cadastro" method="post" action="insereAlunos.php" enctype="multipart/form-data">
 
  	<label for="matricula"><h5>Matrícula</h5></label>
- 	<input type="text" name="siape">
+ 	<input type="text" name="matricula">
 
 	<label for="nome"><h5>Nome</h5></label>
 	<input type="text" name="nome">

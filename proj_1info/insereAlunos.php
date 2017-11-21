@@ -11,18 +11,19 @@ $nome = $primeironome.'.'.$sobrenome;
 
 $extensao = explode('/' , $_FILES['foto']['type']);
 
-$destino = "imagens/professores/".$data.$nome.".".$extensao[1];
+$destino = "imagens/alunos/".$data.$nome.".".$extensao[1];
 
 move_uploaded_file($origem, $destino);
 
-$siape = $_POST['siape'];
+$matri = $_POST['matricula'];
 $email = $_POST['email'];
 $foto = $destino;
+$turma = $_POST['turma'];
 $nomep = $_POST['nome'];
 
-$linha = "\n".$siape.",".$nomep.",".$email.",".$foto;
+$linha = "\n".$matri.",".$nomep.",".$turma.",".$email.",".$foto;
 
-$arquivo = fopen('dados/professores.csv' , 'a+');
+$arquivo = fopen('dados/alunos.csv' , 'a+');
 
 fwrite($arquivo, $linha);
 
@@ -31,8 +32,5 @@ fclose($arquivo);
 
 
 	echo "<meta http-equiv='refresh' content='0;url=carregando.php'>";
-
-
-
 
 ?>

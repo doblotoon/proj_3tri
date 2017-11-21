@@ -32,6 +32,7 @@
 	}
 
 
+
 	function listaOfertas($ano , $turma){
 		$dados = file('dados/ofertas.csv');
 		$ofertas = array();
@@ -51,15 +52,5 @@
 		return $ofertas;
 	}
 
-	function troca($codigo){
-		//ele precia trocar o numero da materia pelo nome da mesma
-		$disciplinas = file('disciplinas.csv');
-		$ofertas =  file('ofertas.csv');
-
-			if ($codigo == $ofertas['cod_disciplinas']) {
-					$codigo =$disciplinas['nome'];
-
-			}
-		}
 
 ?>

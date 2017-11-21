@@ -13,9 +13,12 @@ $disciplinas = file('disciplinas.csv');
 				<ul>";
 
 		foreach ($funcao as $oferta) {
+			$disc = BuscaDisciplinas($oferta['cod_disciplina']);
+
+
 			if ($oferta['turma'] == '1info1') {
 			 		echo "<li>"
-						.$oferta['cod_disciplina']."-".$oferta['nome'].
+						.$disc['disciplina']."-".$prof['nome'].
 					 "</li>";
 			}
 			if ($oferta['turma'] == '1info2') {
