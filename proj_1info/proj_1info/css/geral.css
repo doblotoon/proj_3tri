@@ -1,0 +1,118 @@
+body{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 15px;
+	background-color: #fbfbfb;
+}
+
+img{
+	width: 100%;
+}
+
+/*topo*/
+#logo{
+	width: 15%;
+	float:left;
+	margin-bottom: 2%;
+}
+
+#nome_site{
+	margin-top: 2%;
+	width: 50%;
+	float: left;
+}
+.login{
+	width: 40%;
+	float: right;
+}
+
+.divider{
+	clear: both;
+}
+
+
+/*menu*/
+.menu{
+	width: 95%;
+	margin-bottom: 30px;
+}
+
+.item.menu{
+	width: 14%;
+	float: left;
+	font-size: 115%;
+	border: 1px solid #aaa;
+	text-align: center;
+	padding: 1.2%;
+}
+
+.item.ativo{
+	background-color: #eee;
+}
+
+a{
+	color:#000;
+}
+
+.item.menu:hover{
+	background-color: #ccc;
+}
+
+/*conteudo geral*/
+.coluna10{
+	width: 10%;
+	float: left;
+	color:#fff;
+}
+
+.coluna80{
+	width: 80%;
+	float: left;
+	border: 1px solid #aaa;
+	padding: 2%;
+}
+
+
+.escondido{
+	display: none;
+}
+
+.modal {
+	background: #000;
+	opacity: 0.99;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.modal img{
+	width: 30%;
+	height: 60%;
+    margin-left:30%;
+    margin-top: 6%;
+}
+
+.modal .fechar{
+	color: #ddd;
+	position: fixed;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.espaco{
+	margin-top: 2%;
+}
+
+.tamanho{
+	width: 	30%;
+}
+.bordinha{
+	margin-top: 2%;
+}
+
+#diminuir{
+	width: 8%;
+}
