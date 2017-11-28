@@ -9,24 +9,24 @@
 
 
 ?>
-	<div class="coluna10">
-	.
-	</div>
+	<div class="coluna10">.</div>
 
 	<article class="coluna80">
 		<section class="foto">
 			<section class="clicavel" id="img">
-				<img src="<?=$professor['foto']?>" >
+				<img class='fotos' src="<?=$professor['foto']?>" >
 			</section>
 
 			<div class="modal img escondido">
-				<div class="fechar "><img id="diminuir" src="imagens/x.png"></div>
+				<div class="fechar ">
+					<img src="imagens/x.png">
+				</div>
 				<img src="<?=$professor['foto']?>">
 			</div>
 		</section>
 
 		<section class="dados">
-			<h2><?=$professor['nome']?></h2>
+			<h2><?=$professor['nome']?></h	2>
 			<p><?=$professor['email']?></p>
 		</section>
 	</article>	

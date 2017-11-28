@@ -101,6 +101,10 @@ a{
 	right: 0;
 	cursor: pointer;
 }
+.fechar{
+	width: 6%;
+	margin-right: 
+}
 
 .espaco{
 	margin-top: 2%;
@@ -114,5 +118,5 @@ a{
 }
 
 #diminuir{
-	width: 8%;
+	width: 100%;
 }

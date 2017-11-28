@@ -9,7 +9,7 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="css/completo.css">
 	<link rel="stylesheet" type="text/css" href="css/geral.css">
 	<link rel="stylesheet" type="text/css" href="css/profs.css">
-	<title>acessor eletrônico</title>
+	<title>agenda de tarefas</title>
 	<meta charset="utf-8">
 </head>
 <body>

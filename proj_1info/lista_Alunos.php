@@ -11,7 +11,15 @@ include 'alunos.php';
 
 	<!-- conteudo principal -->
 	<article class="coluna80">
-	<a href="cadastroAlunos.php"><h4>Cadastrar aluno</h4></a>
+
+<?php
+
+	if (isset($_SESSION['login'])) {
+	echo '<a href="cadastroAlunos.php"><h4>Cadastrar aluno</h4></a>';	
+	}
+	
+?>	
+
 	<section class="lista">
 	<H2>1INFO1</H2>
 			<ul>
