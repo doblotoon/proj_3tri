@@ -25,7 +25,7 @@
 
 			if ($colunas[0] == $codigo) {
 		    	$disciplina['codigo'] = $colunas[0];
-		    	$disciplina['disciplina'] = $colunas[1];
+		    	$disciplina['disciplinas'] = $colunas[1];
 			}
 		}
 		return $disciplina;
