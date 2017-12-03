@@ -3,7 +3,7 @@
 	include 'disciplinas.php';
 
 	$cont = 1;
-	$disciplinas = file('disciplinas.csv');
+	$disciplinas = file('dados/disciplinas.csv');
 
 
 	for ($i=1; $i < 4 ; $i++) {

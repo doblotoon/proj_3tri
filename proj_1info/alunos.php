@@ -39,7 +39,6 @@
 
 	  return $alunos;
   }
-
   function ListaAlunosTurma($turma){
 	$alunos = array();
 	$dados = file("dados/alunos.csv");

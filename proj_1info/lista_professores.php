@@ -10,7 +10,7 @@ include 'professores.php';
 	<!-- conteudo principal -->
 	<article class="coluna80">
 	<section class="lista">
-			<ul>';
+			';
 
 
  if (isset($_SESSION['login'])) {
@@ -22,15 +22,22 @@ include 'professores.php';
 <?php
 }else{
 }
-	foreach ($lista as $professor) {
-		echo "<div class='professor'>";
-		echo "<img scr='".$professor['foto']."'>";
-		echo ("<li><a href='detalha_professor.php?cod=".$professor['siape']."'>".$professor['nome']."</a> - ".$professor['email']."</li>");
-		echo "</div>";	
-	}
-
 ?>
+	<h2 id="clicavel">professores</h2>
+	<ul id='esconder'>
+<?php
+		foreach ($lista as $posição => $professor) {
+			if ($posição!=0) {
+				echo"<div class='professor'>";
+				echo "<img scr='".$professor['foto']."'>";
+				echo ("<li><a href='detalha_professor.php?cod=".$professor['siape']."'>".$professor['nome']."</a> - ".$professor['email']."</li>");
+				echo "</div>";	
+			}
+		}
+?>
+	</div>
 
+</section>
 			</ul>
 		</section>
 	</article>

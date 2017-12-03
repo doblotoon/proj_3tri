@@ -1,8 +1,8 @@
+<!DOCTYPE html>
+<html>
 <?php
 session_start();
 ?>
-<!DOCTYPE html>
-<html>
 <head>
 	<script type="text/javascript" src="js/jquerry.js" ></script>
 	<script type="text/javascript" src="js/script.js"></script>

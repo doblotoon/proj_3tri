@@ -10,5 +10,6 @@
 				<h2>1info".$i."</h2>
 				<ul>";
 	}
+	echo'</ul>';
 	include 'rodape.php';
 ?>

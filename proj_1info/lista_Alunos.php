@@ -1,5 +1,4 @@
 <?php
-
 include 'cabecalho.php';
 include 'alunos.php';
 //(body)
@@ -20,9 +19,9 @@ include 'alunos.php';
 	
 ?>	
 
-	<section class="lista">
-	<H2>1INFO1</H2>
-			<ul>
+	<section  class="lista">
+	<H2 id='clicavel1'>1INFO1</H2>
+			<ul id='esconder1'>
 			
 <?php
 	
@@ -31,13 +30,15 @@ include 'alunos.php';
 	foreach ($lista as $aluno) {
 	
 	
-		echo ("<li><a href='detalha_aluno.php?cod=".$aluno['matricula']."'>".$aluno['nome']."</a></li>");
+		echo ("<li ><a href='detalha_aluno.php?cod=".$aluno['matricula']."'>".$aluno['nome']."</a></li>");
 		
 	}
 ?>
+	</ul>
 	</section>
-	<section class="lista">
-	<H2>1INFO2</H2>
+	<section  class="lista">
+	<H2 id="clicavel2">1INFO2</H2>
+	<ul id='esconder2'>
 
 <?php
 	$lista = listaAlunosTurma('1info2');
@@ -45,20 +46,22 @@ include 'alunos.php';
 	foreach ($lista as $aluno) {
 	
 		
-		echo ("<li><a href='detalha_aluno.php?cod=".$aluno['matricula']."'>".$aluno['nome']."</a></li>");
+		echo ("<li ><a href='detalha_aluno.php?cod=".$aluno['matricula']."'>".$aluno['nome']."</a></li>");
 		
 	}
 ?>
+	</ul>
 	</section>
-	<section class="lista">
-	<H2>1INFO3</H2>
+	<section  class="lista">
+	<H2 id='clicavel3'>1INFO3</H2>
+	<ul id='esconder3'>
 
 <?php
 
 	$lista = listaAlunosTurma('1info3');
 
 	foreach ($lista as $aluno) {
-		echo ("<li><a href='detalha_aluno.php?cod=".$aluno['matricula']."'>".$aluno['nome']."</a></li>");
+		echo ("<li ><a href='detalha_aluno.php?cod=".$aluno['matricula']."'>".$aluno['nome']."</a></li>");
 		
 	}
 
