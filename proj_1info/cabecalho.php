@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <?php
@@ -39,16 +40,20 @@ session_start();
 <?php
 }
 ?>
-	</header>
 	<div class='divider'></div>
+</header>
+
 	<!-- menu -->
-	
-	<nav class="menu">
-		<a href=""><section class="item menu">Próximas tarefas</section></a>
-		<a href=""><section class="item menu">Todas Tarefas</section></a>
-		<a href="listaDisciplina.php"><section class="item menu">Tarefas por disciplina</section></a>
-		<a href=""><section class="item menu">Tarefas por data</section></a>
-		<a href="lista_professores.php"><section class="item menu ativo">Professores</section></a>
-		<a href="lista_Alunos.php"><section class="item menu">Colegas</section></a>
-	</nav>
-	<div class='divider'></div>
+	<div id='cor'>	
+		<nav class="menu">
+			<a href="index.php"><section class="tab ativo" id="tab1">Próximas tarefas</section></a>
+			<a href=""><section class="tab" id="tab2">Próximas tarefas</section></a>
+			<a href=""><section class="tab" id="tab3">Todas Tarefas</section></a>
+			<a href="listaDisciplina.php" ><section class="tab" id="tab4">Tarefas por disciplina</section></a>
+			<a href=""><section class="tab" id="tab5">Tarefas por data</section></a>
+			<a href="lista_professores.php"><section class="tab" id="tab6">Professores</section></a>
+			<a href="lista_Alunos.php"><section class="tab" id="tab7">Colegas</section></a>
+		</nav>
+		<div class='divider'></div>
+	</div>
+		

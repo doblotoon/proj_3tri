@@ -20,7 +20,7 @@ include 'alunos.php';
 ?>	
 
 	<section  class="lista">
-	<H2 id='clicavel1'>1INFO1</H2>
+	<H2 id='clicavel1' class='mouse'>1INFO1</H2>
 			<ul id='esconder1'>
 			
 <?php
@@ -37,7 +37,7 @@ include 'alunos.php';
 	</ul>
 	</section>
 	<section  class="lista">
-	<H2 id="clicavel2">1INFO2</H2>
+	<H2 id="clicavel2" class='mouse'>1INFO2</H2>
 	<ul id='esconder2'>
 
 <?php
@@ -53,7 +53,7 @@ include 'alunos.php';
 	</ul>
 	</section>
 	<section  class="lista">
-	<H2 id='clicavel3'>1INFO3</H2>
+	<H2 id='clicavel3' class='mouse'>1INFO3</H2>
 	<ul id='esconder3'>
 
 <?php

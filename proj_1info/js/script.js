@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	//modal
 	$('.clicavel').click(function(){
 		var id;
 		id = $(this).attr('id');
@@ -9,18 +10,16 @@ $(document).ready(function(){
 		$('.modal').addClass('escondido');
 	})
 
-
-	$("#clicavel").click(function(){
-
-		$('#esconder').toggleClass('escondido');
-
-	})
+	//fim modal
 	
+	//professor escondido
 	$("#clicavel").click(function(){
 
 		$('#esconder').toggleClass('escondido');
 
 	})
+
+	//aluno escondido
 	$("#clicavel1").click(function(){
 
 		$('#esconder1').toggleClass('escondido');
@@ -35,5 +34,17 @@ $(document).ready(function(){
 
 		$('#esconder3').toggleClass('escondido');
 
+	})
+
+
+	//tabs
+
+	$(".tab").click(function(){
+		var id;
+		id = $(this).attr('id');
+
+		$(".tab").removeClass('ativo');
+		
+		$("#"+id).addClass('ativo');
 	})
 })

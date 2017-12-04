@@ -5,8 +5,10 @@
 	$login = $_POST['login'];
 	$senha = $_POST['senha'];
 
+	echo "	<div class='coluna20'>.</div>";
+
 	if ($login == 'admin' and $senha == 'admin') {
-		echo "<img src='imagens/carregando.gif'>";
+		echo "<img id='carregando' src='imagens/carregando.gif'>";
 
 
 		$_SESSION['nome'] = 'Administrador';

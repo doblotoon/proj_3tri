@@ -23,7 +23,7 @@ include 'professores.php';
 }else{
 }
 ?>
-	<h2 id="clicavel">professores</h2>
+	<h2 id="clicavel" class="mouse">	Professores</h2>
 	<ul id='esconder'>
 <?php
 		foreach ($lista as $posição => $professor) {
