@@ -116,7 +116,12 @@ a{
 #diminuir{
 	width: 100%;
 }
+
 .rodape{
 	text-align: center;
 	background-color: #ccc;
+}
+
+.mouse{
+	cursor: pointer;
 }
