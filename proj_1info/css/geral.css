@@ -43,6 +43,7 @@ a{
 }
 
 .tab:hover{
+	color:#FFCC99;
 	background-color: #228B22;
 }
 
@@ -149,4 +150,7 @@ a{
 	padding: 1.5%;
 	background-color: #006400;
 	text-align: center;
+}
+.rodape:hover{
+	color:#FFCC99;
 }

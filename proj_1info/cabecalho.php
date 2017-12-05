@@ -30,9 +30,9 @@ session_start();
 			<label class="log" for="senha">Senha</label>
 			<input placeholder="senha" type="password" name="senha">
 
-			<input type="image" scr="images/enviar.png" name="MinhaImagem">
+			<input type="submit" name="enviar">
+			<!--<input type="image" scr="images/enviar.png" name="MinhaImagem">-->
 			<!--<img id='enviar' src="imagens/enviar.png"> isso fica para outro dia-->
-			<!--<input type="submit" name="enviar">-->
 		</form>
 <?php
 	}else{
