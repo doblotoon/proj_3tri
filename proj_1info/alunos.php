@@ -31,8 +31,8 @@
 			$aluno['matricula'] = $colunas[0];
 			$aluno['nome'] = $colunas[1];
 			$aluno['turma'] = $colunas[2];
-			$aluno['email'] = $colunas[3];
-		$aluno['foto'] = $colunas[4];
+@			$aluno['email'] = $colunas[3];
+@		$aluno['foto'] = $colunas[4];
 
 			$alunos[] = $aluno;
 	}
@@ -52,7 +52,7 @@
 			$aluno['nome'] = $colunas[1];
 			$aluno['turma'] = $colunas[2];
 			$aluno['email'] = $colunas[3];
-			$aluno['foto'] = $colunas[4];
+@			$aluno['foto'] = $colunas[4];
 			$alunos[] = $aluno;
 
 		}

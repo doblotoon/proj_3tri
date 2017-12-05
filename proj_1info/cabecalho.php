@@ -50,7 +50,7 @@ session_start();
 	<!-- menu -->
 	<div id='cor'>	
 		<nav class="menu">
-			<a href="index.php"><section class="tab ativo" id="tab1">Home</section></a>
+			<a href="index.php"><section class="tab" id="tab1">Home</section></a>
 			<a href=""><section class="tab" id="tab2">próximas tarefas</section></a>
 			<a href=""><section class="tab" id="tab3">Todas Tarefas</section></a>
 			<a href="listaDisciplina.php" ><section class="tab" id="tab4">Tarefas por disciplina</section></a>

@@ -1,32 +1,35 @@
 <?php
 	include 'cabecalho.php';
 	include 'disciplinas.php';
+	include 'professores.php';
 
 	$cont = 1;
 	$disciplinas = file('dados/disciplinas.csv');
 
 
-	for ($i=1; $i < 4 ; $i++) {
+	for($i=1; $i < 4 ; $i++) {
 		$funcao = listaOfertas('2017','1info'.$i);
 		echo "<ul>
 				<section class = 'lista'>
-					<h2>1info".$i."</h2>";
+			 	<h2>1info".$i."</h2>";
 
-			foreach ($disciplinas as $posi => $linha) {
-				$colunas = explode(',', $linha);
+
+
+			foreach ($funcao as $posi => $linha) {
+				$colunas = explode(',' , $linha);
 				if ($posi != 0) {
-					$disciplina = buscaDisciplinas($funcao['cod_disciplina']);
-					$professor = buscaProfessor($funcao['cod_professor']);
+					$disciplina = buscaDisciplinas($colunas['cod_disciplina']);
+					$professor = buscaProfessor($colunas['cod_professor']);
 					echo "<li>
-							".$disciplina." - ".$professor." 
+							".$disciplina['disciplina']." - ".$professor['nome']." 
 						  </li>";	
 				}
 				
 			}					
 
-		echo "</section>
+		echo 	"</section>
 			  </ul>";	
 	}
 
-	include 'rodape';
+	include 'rodape.php';
 ?>

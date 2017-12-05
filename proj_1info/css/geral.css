@@ -134,11 +134,12 @@ a{
 .mouse{
 	cursor: pointer;
 }
-.ativo{
+/*.tab.ativo{
 	color: #fff;
 	background-color: #cacaba;
-}
+}*/
 .tab{
+	height: 25px;
 	color: #fff;
 	width: 11%;
 	float: left;

@@ -37,7 +37,7 @@ $(document).ready(function(){
 	})
 
 
-	//tabs
+	//tabs isso fica para outro dia...
 
 	/*$("#tab6").click(function(){
 		var id;
@@ -55,14 +55,14 @@ $(document).ready(function(){
 		id = $(this).attr('id');
 		$('.'+id).append(a);
 
-	}) isso fica para outro dia*/
+	}) isso fica para outro dia
+
 	$(".tab").click(function(){
 		var id;
 
 		id = $(this).attr('id');
 
-		$(".tab").removeClass('ativo');
-
 		$("#"+id).addClass('ativo');
 	})
+	*/
 })
