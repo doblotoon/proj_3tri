@@ -39,12 +39,30 @@ $(document).ready(function(){
 
 	//tabs
 
-	$(".tab").click(function(){
+	/*$("#tab6").click(function(){
 		var id;
 		id = $(this).attr('id');
 
-		$(".tab").removeClass('ativo');
+		$("."+id).addClass('ativo');
 		
+		$("."+id).removeClass('ativo');
+	})
+	//tentativa de fazer uma imagem como um <submit>
+
+	$('#enviar').click(function(){
+		var id,a;
+		a = '<input type='+submit+'name='+enviar+'>';
+		id = $(this).attr('id');
+		$('.'+id).append(a);
+
+	}) isso fica para outro dia*/
+	$(".tab").click(function(){
+		var id;
+
+		id = $(this).attr('id');
+
+		$(".tab").removeClass('ativo');
+
 		$("#"+id).addClass('ativo');
 	})
 })

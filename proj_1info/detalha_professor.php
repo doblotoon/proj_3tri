@@ -26,7 +26,7 @@
 		</section>
 
 		<section class="dados">
-			<h2><?=$professor['nome']?></h	2>
+			<h2><?=$professor['nome']?></h2>
 			<p><?=$professor['email']?></p>
 		</section>
 	</article>	
